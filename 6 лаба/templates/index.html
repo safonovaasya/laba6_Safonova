@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ирисы Фишера</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+        }
+        form {
+            margin-top: 50px;
+            position: absolute;
+            width: 315px;
+        }
+        input {
+            width: 300px;
+            height: 30px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border: 2px solid #8A2BE2;
+            border-radius: 20px;
+        }
+        .btn {
+            width:315px;
+            height: 40px;
+            background: #8A2BE2;
+            color: #FFFFFF;
+        }
+        h1 {
+            position:absolute;
+            margin-top: 380px;
+        }
+        ul {
+            position:absolute;
+            margin-top: 570px;
+        }
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form method="post">
+        <input type="text" name="sepal-length" placeholder="Длина чашелистика">
+        <input type="text" name="sepal-width" placeholder="Ширина чашелистика">
+        <input type="text" name="petal-length" placeholder="Длина лепестка">
+        <input type="text" name="petal-width" placeholder="Ширина лепестка">
+        <input type="submit" value="Отправить" class="btn">
+    </form>
+    <h1>{{name}}</h1>
+    {% if val_array %}
+    <ul>
+        
+
+    </ul>
+    {% endif %}
+</div>
+</body>
+</html>
